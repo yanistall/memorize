@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "cat")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("早上好")
-        }
+        HStack {
+            CardView()
+            CardView()
+            CardView()
+            CardView()
+    }
+        .foregroundStyle(.orange)
         .padding()
+    }
+}
+
+struct CardView : View {
+    var isFaceUp: Bool = true
+    var body: some View {
+        ZStack {
+            if isFaceUp {
+                RoundedRectangle(cornerRadius: 20)
+                    .strokeBorder(lineWidth: 3)
+                Text("👍")
+            }
+            else {
+                RoundedRectangle(cornerRadius: 20)
+            }
+            
+        }
     }
 }
 
 #Preview {
     ContentView()
+        
 }
