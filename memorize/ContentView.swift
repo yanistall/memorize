@@ -2,43 +2,80 @@
 //  ContentView.swift
 //  memorize
 //
-//  Created by Yan on 2026/3/16.
+//  Created by Ken Hsieh on 2026/3/16.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-
+    var emojis = ["A", "B", "C","D", "🚚", "✈️", "🚡", "🛰", "🚅", "🚗", "🚕", "🚌", "🚎", "🚓", "🚑", "🚒", "🛵", "🚜", "🛴", "🏍", "🛺", "🚨", "🚃", "🛳", "🛥", "🚤", "⛵️", "🛶"]
+    
+    @State var emojiCount = 6
+    
     var body: some View {
-        HStack {
-            CardView()
-            CardView()
-            CardView()
-            CardView()
-    }
-        .foregroundStyle(.orange)
-        .padding()
-    }
-}
-
-struct CardView : View {
-    var isFaceUp: Bool = true
-    var body: some View {
-        ZStack {
-            if isFaceUp {
-                RoundedRectangle(cornerRadius: 20)
-                    .strokeBorder(lineWidth: 3)
-                Text("👍")
-            }
-            else {
-                RoundedRectangle(cornerRadius: 20)
+        VStack {
+            HStack {
+                ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                    CardView(content: emoji)
+                }
             }
             
+            HStack {
+                remove
+                Spacer()
+                add
+            }
+            .font(.largeTitle)
+        }
+        .padding()
+        .foregroundStyle(.orange)
+    }
+    
+    var remove: some View {
+        Button {
+            if emojiCount > 1 {
+                emojiCount -= 1
+            }
+        } label: {
+            Image(systemName: "minus.circle")
+        }
+    }
+    
+    var add: some View {
+        Button {
+            if emojiCount < emojis.count {
+                emojiCount += 1
+            }
+        } label: {
+            Image(systemName: "plus.circle")
         }
     }
 }
 
+struct CardView: View {
+    @State var isFaceUp: Bool = true
+    var content: String
+    var body: some View {
+        ZStack {
+            let shape = RoundedRectangle(cornerRadius: 20)
+            if isFaceUp {
+                shape.fill(.white)
+                shape.strokeBorder(lineWidth: 3)
+                Text(content).font(.largeTitle)
+            }
+            else {
+                shape
+            }
+        }
+        .onTapGesture {
+            isFaceUp = !isFaceUp
+        }
+    }
+}
+
+
+
 #Preview {
     ContentView()
-        
+    
 }

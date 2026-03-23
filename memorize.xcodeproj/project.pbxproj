@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C466F812F6808AC00B0BF54 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C466F802F6808AC00B0BF54 /* README.md */; };
+		BEE01D502F68083700CBEA10 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BEE01D4F2F68082E00CBEA10 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C466F682F67F59600B0BF54 /* memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C466F802F6808AC00B0BF54 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEE01D3B2F67F74300CBEA10 /* memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE01D4F2F68082E00CBEA10 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2C466F6A2F67F59600B0BF54 /* memorize */ = {
+		BEE01D3D2F67F74300CBEA10 /* memorize */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = memorize;
 			sourceTree = "<group>";
@@ -24,7 +24,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C466F652F67F59600B0BF54 /* Frameworks */ = {
+		BEE01D382F67F74300CBEA10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,19 +34,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C466F5F2F67F59600B0BF54 = {
+		BEE01D322F67F74300CBEA10 = {
 			isa = PBXGroup;
 			children = (
-				2C466F802F6808AC00B0BF54 /* README.md */,
-				2C466F6A2F67F59600B0BF54 /* memorize */,
-				2C466F692F67F59600B0BF54 /* Products */,
+				BEE01D3D2F67F74300CBEA10 /* memorize */,
+				BEE01D3C2F67F74300CBEA10 /* Products */,
+				BEE01D4F2F68082E00CBEA10 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
-		2C466F692F67F59600B0BF54 /* Products */ = {
+		BEE01D3C2F67F74300CBEA10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C466F682F67F59600B0BF54 /* memorize.app */,
+				BEE01D3B2F67F74300CBEA10 /* memorize.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,85 +54,85 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C466F672F67F59600B0BF54 /* memorize */ = {
+		BEE01D3A2F67F74300CBEA10 /* memorize */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C466F732F67F59800B0BF54 /* Build configuration list for PBXNativeTarget "memorize" */;
+			buildConfigurationList = BEE01D462F67F74500CBEA10 /* Build configuration list for PBXNativeTarget "memorize" */;
 			buildPhases = (
-				2C466F642F67F59600B0BF54 /* Sources */,
-				2C466F652F67F59600B0BF54 /* Frameworks */,
-				2C466F662F67F59600B0BF54 /* Resources */,
+				BEE01D372F67F74300CBEA10 /* Sources */,
+				BEE01D382F67F74300CBEA10 /* Frameworks */,
+				BEE01D392F67F74300CBEA10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2C466F6A2F67F59600B0BF54 /* memorize */,
+				BEE01D3D2F67F74300CBEA10 /* memorize */,
 			);
 			name = memorize;
 			packageProductDependencies = (
 			);
 			productName = memorize;
-			productReference = 2C466F682F67F59600B0BF54 /* memorize.app */;
+			productReference = BEE01D3B2F67F74300CBEA10 /* memorize.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C466F602F67F59600B0BF54 /* Project object */ = {
+		BEE01D332F67F74300CBEA10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					2C466F672F67F59600B0BF54 = {
+					BEE01D3A2F67F74300CBEA10 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
-			buildConfigurationList = 2C466F632F67F59600B0BF54 /* Build configuration list for PBXProject "memorize" */;
+			buildConfigurationList = BEE01D362F67F74300CBEA10 /* Build configuration list for PBXProject "memorize" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2C466F5F2F67F59600B0BF54;
+			mainGroup = BEE01D322F67F74300CBEA10;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2C466F692F67F59600B0BF54 /* Products */;
+			productRefGroup = BEE01D3C2F67F74300CBEA10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C466F672F67F59600B0BF54 /* memorize */,
+				BEE01D3A2F67F74300CBEA10 /* memorize */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C466F662F67F59600B0BF54 /* Resources */ = {
+		BEE01D392F67F74300CBEA10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C466F812F6808AC00B0BF54 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C466F642F67F59600B0BF54 /* Sources */ = {
+		BEE01D372F67F74300CBEA10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE01D502F68083700CBEA10 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2C466F712F67F59800B0BF54 /* Debug */ = {
+		BEE01D442F67F74500CBEA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		2C466F722F67F59800B0BF54 /* Release */ = {
+		BEE01D452F67F74500CBEA10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +251,7 @@
 			};
 			name = Release;
 		};
-		2C466F742F67F59800B0BF54 /* Debug */ = {
+		BEE01D472F67F74500CBEA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -270,7 +270,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cycu.mis.ios.yan.memorize;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cycu.mis.ios.instructor.memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -282,7 +282,7 @@
 			};
 			name = Debug;
 		};
-		2C466F752F67F59800B0BF54 /* Release */ = {
+		BEE01D482F67F74500CBEA10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -301,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cycu.mis.ios.yan.memorize;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cycu.mis.ios.instructor.memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -316,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C466F632F67F59600B0BF54 /* Build configuration list for PBXProject "memorize" */ = {
+		BEE01D362F67F74300CBEA10 /* Build configuration list for PBXProject "memorize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C466F712F67F59800B0BF54 /* Debug */,
-				2C466F722F67F59800B0BF54 /* Release */,
+				BEE01D442F67F74500CBEA10 /* Debug */,
+				BEE01D452F67F74500CBEA10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C466F732F67F59800B0BF54 /* Build configuration list for PBXNativeTarget "memorize" */ = {
+		BEE01D462F67F74500CBEA10 /* Build configuration list for PBXNativeTarget "memorize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C466F742F67F59800B0BF54 /* Debug */,
-				2C466F752F67F59800B0BF54 /* Release */,
+				BEE01D472F67F74500CBEA10 /* Debug */,
+				BEE01D482F67F74500CBEA10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C466F602F67F59600B0BF54 /* Project object */;
+	rootObject = BEE01D332F67F74300CBEA10 /* Project object */;
 }
