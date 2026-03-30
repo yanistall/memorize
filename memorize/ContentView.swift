@@ -71,7 +71,7 @@ struct CardView: View {
     var body: some View {
         ZStack {
             let shape = RoundedRectangle(cornerRadius: 20)
-            if isFaceUp {
+            Group {
                 shape.fill(.white)
                 shape.strokeBorder(lineWidth: 3)
                 Text(content)
