@@ -7,14 +7,26 @@
 
 import Foundation
 
-func createCardContent(index: Int) -> String {
-    return "A"
-}
-
-class EmojiMemoryGame {
-    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: 4, createCardContent: createCardContent )
+struct MemoryGame<CardContent> {
+    var cards: [Card]
     
-    var cards: [MemoryGame<String>.Card] {
-        model.cards
+    init(numberOfPairsOfCards: Int,
+         createCardContent: (Int) -> CardContent) {
+        cards = []
+        for index in 0..<numberOfPairsOfCards {
+            let cardContent: CardContent = createCardContent(index)
+            cards.append(Card(content: cardContent))
+            cards.append(Card(content: cardContent))
+        }
+    }
+    
+    func choose(card: Card) {
+        
+    }
+    
+    struct Card {
+        var isFaceUp: Bool = false
+        var isMatched: Bool = false
+        var content: CardContent
     }
 }
