@@ -9,6 +9,7 @@ import Foundation
 
 struct MemoryGame<CardContent> where CardContent: Equatable {
     var cards: [Card]
+    private(set) var score: Int = 0
     
     init(numberOfPairsOfCards: Int,
          createCardContent: (Int) -> CardContent) {
@@ -23,22 +24,25 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     
     var lastFaceUpIndex: Int?
     mutating func choose(_ card: Card) {
-        if let chosenIndex = index(of: card) {
+        if let chosenIndex = index(of: card),
+           !cards[chosenIndex].isFaceUp,
+           !cards[chosenIndex].isMatched {
             if let lastIndex = lastFaceUpIndex {
                 if cards[lastIndex].content == cards[chosenIndex].content {
                     cards[lastIndex].isMatched = true
                     cards[chosenIndex].isMatched = true
+                    score += 2
                 }
+                cards[chosenIndex].isFaceUp = true
                 lastFaceUpIndex = nil
             } else {
                 for i in 0..<cards.count {
                     cards[i].isFaceUp = false
                 }
+                cards[chosenIndex].isFaceUp = true
                 lastFaceUpIndex = chosenIndex
             }
-            cards[chosenIndex].isFaceUp.toggle()
         }
-        print("cards: \(cards)")
     }
     
     func index(of card: Card) -> Int? {
@@ -52,12 +56,14 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     
     mutating func shuffle() {
         cards.shuffle()
-        print("shuffle cards: \(cards)")
     }
     
     struct Card: Equatable, Identifiable {
         static func == (lhs: MemoryGame<CardContent>.Card, rhs: MemoryGame<CardContent>.Card) -> Bool {
-            lhs.content == rhs.content && lhs.isFaceUp == rhs.isFaceUp && lhs.isMatched == rhs.isMatched && lhs.id == rhs.id
+            lhs.content == rhs.content
+            && lhs.isFaceUp == rhs.isFaceUp
+            && lhs.isMatched == rhs.isMatched
+            && lhs.id == rhs.id
         }
         
         var isFaceUp: Bool = false
